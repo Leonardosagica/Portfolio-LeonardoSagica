@@ -95,12 +95,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("../images/HOME-IMG-TESTE.jpg") no-repeat;
+    background-image: url("../images/HOME-IMG-TESTE.jpg");
     background-size: cover;
     background-position: center;
-    /* background-position: right;
-    background-size: contain;
-    background-attachment: fixed; */
+    /* z-index: -1; */
 }
 
 .home-content {
@@ -134,8 +132,6 @@ section {
 
 .home.show-animate .home-content.text-animate h3 {
     animation: homeBgText 8s linear infinite;
-    animation-delay: 1s;
-    animation: homeCursorText 8s linear infinite;
     animation-delay: 1s;
 }
 
@@ -298,10 +294,10 @@ section {
     transition: 3s;
 }
 
-/* .home-imgHover:hover {
-	background:var(--bg-color);
-	opacity: 0.8;
-} */
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: 0.8;
+}
 
 .about {
     display: flex;
@@ -573,25 +569,25 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 0%;
+    width: 60%;
 }
 
-/** PROGRESS BAR PROFESSIONAL SKILLS */
+/** PROGRESS BAR SECOND COLUMN */
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
     width: 60%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 85%;
+    width: 65%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 60%;
+    width: 70%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 0%;
+    width: 50%;
 }
 
 .contact {
